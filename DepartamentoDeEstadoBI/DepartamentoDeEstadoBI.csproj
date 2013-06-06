@@ -43,9 +43,9 @@
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -81,10 +81,13 @@
     <Content Include="binaries\act\zh-CHT\AjaxControlToolkit.resources.dll" />
     <Content Include="Default.aspx" />
     <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
-    <None Include="Service References\DEWSReference\DeptEstadoData.disco" />
-    <None Include="Service References\DEWSReference\configuration91.svcinfo" />
-    <None Include="Service References\DEWSReference\configuration.svcinfo" />
-    <None Include="Service References\DEWSReference\Reference.svcmap">
+    <None Include="Properties\PublishProfiles\AFCGHack - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\AFCGHack - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\local.pubxml" />
+    <None Include="Service References\ServiceReference1\DeptEstadoData.disco" />
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -95,6 +98,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <None Include="Service References\ServiceReference1\DeptEstadoData.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.cs">
@@ -105,7 +109,7 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\DEWSReference\Reference.cs">
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -119,10 +123,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\DEWSReference\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\DEWSReference\DeptEstadoData.wsdl" />
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

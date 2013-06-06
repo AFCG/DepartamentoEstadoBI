@@ -2,6 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepartamentoDeEstadoBI", "DepartamentoDeEstadoBI\DepartamentoDeEstadoBI.csproj", "{B4123DB7-1924-481F-9351-AE8B7BF52298}"
+	ProjectSection(ProjectDependencies) = postProject
+		{88713FC6-F061-4148-B5C7-3BFD400402D9} = {88713FC6-F061-4148-B5C7-3BFD400402D9}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepartamentoDeEstadoData", "DepartamentoDeEstadoData\DepartamentoDeEstadoData.csproj", "{88713FC6-F061-4148-B5C7-3BFD400402D9}"
 EndProject

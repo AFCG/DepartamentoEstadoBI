@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="164cae5d-531e-4726-9d3c-f99a3ae1ec56" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ca898374-6439-473e-af17-90d2fed3a297" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <EnableDataBinding>true</EnableDataBinding>
@@ -18,11 +18,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost/DEWS/DeptEstadoData.asmx" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:1921/DeptEstadoData.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="DeptEstadoData.wsdl" MetadataType="Wsdl" ID="55930be0-ea90-469b-b4e2-39db9d4a1fd5" SourceId="1" SourceUrl="http://localhost/DEWS/DeptEstadoData.asmx?wsdl" />
-    <MetadataFile FileName="DeptEstadoData.disco" MetadataType="Disco" ID="082bb900-b73c-4998-b029-1edd9d0b1d68" SourceId="1" SourceUrl="http://localhost/DEWS/DeptEstadoData.asmx?disco" />
+    <MetadataFile FileName="DeptEstadoData.disco" MetadataType="Disco" ID="1f27a0b6-a3a5-49e0-b6b3-37a7d9343589" SourceId="1" SourceUrl="http://localhost:1921/DeptEstadoData.asmx?disco" />
+    <MetadataFile FileName="DeptEstadoData.wsdl" MetadataType="Wsdl" ID="8188ae9c-a1ad-451c-9a94-d57fbf62bd0a" SourceId="1" SourceUrl="http://localhost:1921/DeptEstadoData.asmx?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
