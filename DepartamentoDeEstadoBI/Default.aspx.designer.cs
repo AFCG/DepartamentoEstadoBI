@@ -31,12 +31,21 @@ namespace DepartamentoDeEstadoBI {
         protected global::System.Web.UI.ScriptManager tsmMain;
         
         /// <summary>
-        /// bcCorpClassesByYear control.
+        /// lblFooter1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.BarChart bcCorpClassesByYear;
+        protected global::System.Web.UI.WebControls.Label lblFooter1;
+        
+        /// <summary>
+        /// lblFooter2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblFooter2;
     }
 }

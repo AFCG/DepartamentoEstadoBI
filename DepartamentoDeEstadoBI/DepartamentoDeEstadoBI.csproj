@@ -54,6 +54,11 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\MasterTheme\images\AFCG Logo.png" />
+    <Content Include="App_Themes\MasterTheme\images\SomoMasGrande.jpg" />
+    <Content Include="App_Themes\MasterTheme\images\TOP.jpg" />
+    <Content Include="App_Themes\MasterTheme\images\TOPRepeater.jpg" />
+    <Content Include="App_Themes\MasterTheme\style\masterStyle.css" />
     <Content Include="binaries\act\AjaxControlToolkit.dll" />
     <Content Include="binaries\act\AjaxControlToolkit.pdb" />
     <Content Include="binaries\act\ar\AjaxControlToolkit.resources.dll" />
