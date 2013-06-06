@@ -131,6 +131,37 @@ namespace DepartamentoDeEstadoData.DataAccess
             }
         }
 
+
+        public static DataTable GetCorpOrganizationTypesByYearSeries()
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["DeptEstadoData"].ConnectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand())
+                    {
+                        conn.Open();
+
+                        cmd.Connection = conn;
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.CommandText = "GetCorpOrganizationTypesByYearSeries";
+                        cmd.Parameters.Add(new SqlParameter("@filterYear", 2012));
+
+                        SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+
+                        DataTable resultsTable = new DataTable("CorpOrganizationTypesByYearSeries");
+                        adapter.Fill(resultsTable);
+
+                        return resultsTable;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
         public static DataTable GetCorpTypesByYear(int filterYear)
         {
             try

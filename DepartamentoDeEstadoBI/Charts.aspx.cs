@@ -7,12 +7,12 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 using AjaxControlToolkit;
-using DepartamentoDeEstadoBI.DEWSReference;
 
+using DepartamentoDeEstadoBI.DEWSReference;
 
 namespace DepartamentoDeEstadoBI
 {
-    public partial class _Default : System.Web.UI.Page
+    public partial class Charts : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -80,7 +80,7 @@ namespace DepartamentoDeEstadoBI
 
             foreach (DataRow dRow in DEWS.GetCorpClassesByYearSeries().Rows)
             {
-                yearSeries = new BarChartSeries();
+                yearSeries = new BarChartSeries(); 
                 yearSeries.Name = dRow["CorpClass"].ToString();
                 yearSeries.Data = new decimal[]
                     {

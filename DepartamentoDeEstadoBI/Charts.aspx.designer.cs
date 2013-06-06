@@ -10,7 +10,7 @@
 namespace DepartamentoDeEstadoBI {
     
     
-    public partial class _Default {
+    public partial class Charts {
         
         /// <summary>
         /// form1 control.
@@ -29,24 +29,6 @@ namespace DepartamentoDeEstadoBI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.ScriptManager tsmMain;
-        
-        /// <summary>
-        /// lblTitle control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTitle;
-        
-        /// <summary>
-        /// lblSubTitle control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSubTitle;
         
         /// <summary>
         /// bcCorpClassesByYear control.
@@ -83,23 +65,5 @@ namespace DepartamentoDeEstadoBI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::AjaxControlToolkit.PieChart pcJurisdictionTypes;
-        
-        /// <summary>
-        /// lblFooter1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFooter1;
-        
-        /// <summary>
-        /// lblFooter2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFooter2;
     }
 }

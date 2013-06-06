@@ -73,6 +73,19 @@ namespace DepartamentoDeEstadoData
         }
 
         [WebMethod]
+        public DataTable GetCorpOrganizationTypesByYearSeries()
+        {
+            try
+            {
+                return DepartamentoEstadoData.GetCorpOrganizationTypesByYearSeries();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        [WebMethod]
         public DataTable GetCorpTypesByYear(int filterYear)
         {
             try

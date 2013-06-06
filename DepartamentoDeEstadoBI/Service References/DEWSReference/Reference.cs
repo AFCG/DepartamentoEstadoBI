@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DepartamentoDeEstadoBI.ServiceReference1 {
+namespace DepartamentoDeEstadoBI.DEWSReference {
     using System.Data;
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.DeptEstadoDataSoap")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="DEWSReference.DeptEstadoDataSoap")]
     public interface DeptEstadoDataSoap {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetCorpClassesByYear", ReplyAction="*")]
@@ -32,18 +32,22 @@ namespace DepartamentoDeEstadoBI.ServiceReference1 {
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Data.DataTable GetCorpOrganizationTypesByYear(int filterYear);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetCorpOrganizationTypesByYearSeries", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable GetCorpOrganizationTypesByYearSeries();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetCorpTypesByYear", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Data.DataTable GetCorpTypesByYear(int filterYear);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface DeptEstadoDataSoapChannel : DepartamentoDeEstadoBI.ServiceReference1.DeptEstadoDataSoap, System.ServiceModel.IClientChannel {
+    public interface DeptEstadoDataSoapChannel : DepartamentoDeEstadoBI.DEWSReference.DeptEstadoDataSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class DeptEstadoDataSoapClient : System.ServiceModel.ClientBase<DepartamentoDeEstadoBI.ServiceReference1.DeptEstadoDataSoap>, DepartamentoDeEstadoBI.ServiceReference1.DeptEstadoDataSoap {
+    public partial class DeptEstadoDataSoapClient : System.ServiceModel.ClientBase<DepartamentoDeEstadoBI.DEWSReference.DeptEstadoDataSoap>, DepartamentoDeEstadoBI.DEWSReference.DeptEstadoDataSoap {
         
         public DeptEstadoDataSoapClient() {
         }
@@ -78,6 +82,10 @@ namespace DepartamentoDeEstadoBI.ServiceReference1 {
         
         public System.Data.DataTable GetCorpOrganizationTypesByYear(int filterYear) {
             return base.Channel.GetCorpOrganizationTypesByYear(filterYear);
+        }
+        
+        public System.Data.DataTable GetCorpOrganizationTypesByYearSeries() {
+            return base.Channel.GetCorpOrganizationTypesByYearSeries();
         }
         
         public System.Data.DataTable GetCorpTypesByYear(int filterYear) {
