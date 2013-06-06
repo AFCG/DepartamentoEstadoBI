@@ -32,5 +32,58 @@ namespace DepartamentoDeEstadoData
                 throw;
             }
         }
+
+        [WebMethod]
+        public DataTable GetCorpClassesByYearSeries()
+        {
+            try
+            {
+                return DepartamentoEstadoData.GetCorpClassesByYearSeries();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        [WebMethod]
+        public DataTable GetCorpJurisdictionsByYear(int filterYear)
+        {
+            try
+            {
+                return DepartamentoEstadoData.GetCorpJurisdictionsByYear(filterYear);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        [WebMethod]
+        public DataTable GetCorpOrganizationTypesByYear(int filterYear)
+        {
+            try
+            {
+                return DepartamentoEstadoData.GetCorpOrganizationTypesByYear(filterYear);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        [WebMethod]
+        public DataTable GetCorpTypesByYear(int filterYear)
+        {
+            try
+            {
+                return DepartamentoEstadoData.GetCorpTypesByYear(filterYear);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
     }
 }

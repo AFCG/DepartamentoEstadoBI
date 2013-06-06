@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetCorpClassesByYear">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="filterYear" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorpClassesByYearResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCorpClassesByYearResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorpClassesByYearSeries">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCorpClassesByYearSeriesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCorpClassesByYearSeriesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorpJurisdictionsByYear">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="filterYear" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorpJurisdictionsByYearResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCorpJurisdictionsByYearResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorpOrganizationTypesByYear">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="filterYear" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorpOrganizationTypesByYearResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCorpOrganizationTypesByYearResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorpTypesByYear">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="filterYear" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorpTypesByYearResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCorpTypesByYearResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetCorpClassesByYearSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCorpClassesByYear" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpClassesByYearSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCorpClassesByYearResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpClassesByYearSeriesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCorpClassesByYearSeries" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpClassesByYearSeriesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCorpClassesByYearSeriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpJurisdictionsByYearSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCorpJurisdictionsByYear" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpJurisdictionsByYearSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCorpJurisdictionsByYearResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpOrganizationTypesByYearSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCorpOrganizationTypesByYear" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpOrganizationTypesByYearSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCorpOrganizationTypesByYearResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpTypesByYearSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCorpTypesByYear" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpTypesByYearSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCorpTypesByYearResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DeptEstadoDataSoap">
+    <wsdl:operation name="GetCorpClassesByYear">
+      <wsdl:input message="tns:GetCorpClassesByYearSoapIn" />
+      <wsdl:output message="tns:GetCorpClassesByYearSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpClassesByYearSeries">
+      <wsdl:input message="tns:GetCorpClassesByYearSeriesSoapIn" />
+      <wsdl:output message="tns:GetCorpClassesByYearSeriesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpJurisdictionsByYear">
+      <wsdl:input message="tns:GetCorpJurisdictionsByYearSoapIn" />
+      <wsdl:output message="tns:GetCorpJurisdictionsByYearSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpOrganizationTypesByYear">
+      <wsdl:input message="tns:GetCorpOrganizationTypesByYearSoapIn" />
+      <wsdl:output message="tns:GetCorpOrganizationTypesByYearSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpTypesByYear">
+      <wsdl:input message="tns:GetCorpTypesByYearSoapIn" />
+      <wsdl:output message="tns:GetCorpTypesByYearSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DeptEstadoDataSoap" type="tns:DeptEstadoDataSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCorpClassesByYear">
+      <soap:operation soapAction="http://tempuri.org/GetCorpClassesByYear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpClassesByYearSeries">
+      <soap:operation soapAction="http://tempuri.org/GetCorpClassesByYearSeries" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpJurisdictionsByYear">
+      <soap:operation soapAction="http://tempuri.org/GetCorpJurisdictionsByYear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpOrganizationTypesByYear">
+      <soap:operation soapAction="http://tempuri.org/GetCorpOrganizationTypesByYear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpTypesByYear">
+      <soap:operation soapAction="http://tempuri.org/GetCorpTypesByYear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DeptEstadoDataSoap12" type="tns:DeptEstadoDataSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCorpClassesByYear">
+      <soap12:operation soapAction="http://tempuri.org/GetCorpClassesByYear" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpClassesByYearSeries">
+      <soap12:operation soapAction="http://tempuri.org/GetCorpClassesByYearSeries" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpJurisdictionsByYear">
+      <soap12:operation soapAction="http://tempuri.org/GetCorpJurisdictionsByYear" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpOrganizationTypesByYear">
+      <soap12:operation soapAction="http://tempuri.org/GetCorpOrganizationTypesByYear" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpTypesByYear">
+      <soap12:operation soapAction="http://tempuri.org/GetCorpTypesByYear" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DeptEstadoData">
+    <wsdl:port name="DeptEstadoDataSoap" binding="tns:DeptEstadoDataSoap">
+      <soap:address location="http://localhost/DEWS/DeptEstadoData.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DeptEstadoDataSoap12" binding="tns:DeptEstadoDataSoap12">
+      <soap12:address location="http://localhost/DEWS/DeptEstadoData.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
